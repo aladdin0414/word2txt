@@ -1,0 +1,13 @@
+merge/*
+!merge/.gitkeep
+
+txt/*
+!txt/.gitkeep
+
+pdf/*
+!pdf/.gitkeep
+
+word/*
+!word/.gitkeep
+
+__pycache__/
