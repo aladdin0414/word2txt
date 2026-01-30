@@ -36,10 +36,14 @@ def merge_txt_files(src_dir: Path, out_file: Path) -> int:
     return len(txt_files)
 
 
+
 def main() -> None:
+    from datetime import datetime
+
     base_dir = Path(__file__).resolve().parent
     src_dir = base_dir / "txt"
-    out_file = base_dir / "merge" / "merged.txt"
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    out_file = base_dir / "merge" / f"merged_{timestamp}.txt"
     count = merge_txt_files(src_dir=src_dir, out_file=out_file)
     print(f"已合并 {count} 个文件 -> {out_file}")
 

@@ -10,4 +10,7 @@ pdf/*
 word/*
 !word/.gitkeep
 
+backup
+ai-output
+
 __pycache__/
